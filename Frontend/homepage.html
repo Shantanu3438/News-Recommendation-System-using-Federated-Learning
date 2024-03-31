@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Recommendation System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js"></script>
+</head>
+<body>
+  <header>
+    <div>
+    <h1>News Recommendation System</h1>
+    <nav>
+        <button id="recommended">Recommended for You</button>
+        <button id="trending">Trending</button>
+        <button id="sports">Sports</button>
+        <button id="technology">Technology</button>
+        <button id="business">Business</button>
+        <button id="science">Science</button>
+    </nav>
+    </div>
+    <div id="user-info">
+        <!-- User information will be dynamically added here -->
+      </div>
+  </header>
+  <main id="news-container-main">
+    <div id="news-container">
+    <!-- News Cards will be dynamically added here -->
+    </div>
+</main>
+<script src="mlmodel.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
